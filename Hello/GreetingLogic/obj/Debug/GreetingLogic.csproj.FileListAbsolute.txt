@@ -4,3 +4,9 @@ C:\Users\CodeNation16\source\repos\Hello\GreetingLogic\obj\Debug\GreetingLogic.c
 C:\Users\CodeNation16\source\repos\Hello\GreetingLogic\obj\Debug\GreetingLogic.csproj.CoreCompileInputs.cache
 C:\Users\CodeNation16\source\repos\Hello\GreetingLogic\obj\Debug\GreetingLogic.dll
 C:\Users\CodeNation16\source\repos\Hello\GreetingLogic\obj\Debug\GreetingLogic.pdb
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\bin\Debug\GreetingLogic.dll
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\bin\Debug\GreetingLogic.pdb
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\obj\Debug\GreetingLogic.csprojAssemblyReference.cache
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\obj\Debug\GreetingLogic.csproj.CoreCompileInputs.cache
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\obj\Debug\GreetingLogic.dll
+C:\Users\CodeNation16\source\repos\C-Practice\Hello\GreetingLogic\obj\Debug\GreetingLogic.pdb

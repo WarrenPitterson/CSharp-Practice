@@ -28,9 +28,10 @@ namespace WpfHelo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Greeting gl = new Greeting();
+             Greeting gl = new Greeting();
             string message = gl.GetString();
             MessageBox.Show(message);
         }
     }
 }
+ 
