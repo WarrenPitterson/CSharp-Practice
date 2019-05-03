@@ -1,0 +1,6 @@
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\bin\Debug\Acme.Common.dll
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\bin\Debug\Acme.Common.pdb
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\obj\Debug\Acme.Common.csprojAssemblyReference.cache
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\obj\Debug\Acme.Common.csproj.CoreCompileInputs.cache
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\obj\Debug\Acme.Common.dll
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Common\obj\Debug\Acme.Common.pdb

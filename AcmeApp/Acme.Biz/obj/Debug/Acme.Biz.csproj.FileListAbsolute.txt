@@ -1,0 +1,9 @@
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.dll
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.pdb
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.dll
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.pdb
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csprojAssemblyReference.cache
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csproj.CoreCompileInputs.cache
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csproj.CopyComplete
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.dll
+C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.pdb
