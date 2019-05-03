@@ -8,3 +8,13 @@ C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-impr
 C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csproj.CopyComplete
 C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.dll
 C:\Users\CodeNation16\Desktop\csharp best practices\2-csharp-best-practices-improving-basics-m2-exercise-files\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.pdb
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.CommonTests.dll
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.CommonTests.pdb
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.Common.dll
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.Common.pdb
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csprojAssemblyReference.cache
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csproj.CoreCompileInputs.cache
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csproj.CopyComplete
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.dll
+C:\Users\CodeNation16\Warren C# Work\CSharp-Practice\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.pdb
