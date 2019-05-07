@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,12 @@ namespace Acme.Biz
 
         public string SayHello()
         {
+            var vendor = new Vendor();
+            vendor.SendWelcomeEmail("This is the new email message");
+
+            var emailService = new EmailService();
+            var confirmation = emailService.SendMessage("New product", this.ProductName, "sales@abc.com");
+
             return $"Hello {ProductName} ({ProductID}): {Description}";
         }
     }
