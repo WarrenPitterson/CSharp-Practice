@@ -15,10 +15,14 @@ namespace Acme.Biz.Tests
         public void SayHelloTest()
         {
             //Arrange 
-            var currentProduct = new Product();
-            currentProduct.ProductName = "Saw";
-            currentProduct.ProductID = 1;
-            currentProduct.Description = "15 inch steel blade hand saw";
+            var currentProduct = new Product
+            {
+                ProductName = "Saw",
+                ProductID = 1,
+                Description = "15 inch steel blade hand saw",
+            };
+
+            currentProduct.ProductVendor.CompanyName = "ABC Company";
 
             var expected = "Hello Saw (1): 15 inch steel blade hand saw";
 
@@ -43,6 +47,20 @@ namespace Acme.Biz.Tests
 
             //Assert
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void Product_null()
+        {
+            Product currentProduct = null;
+            var companyName = currentProduct?.ProductVendor?.CompanyName;
+
+            string expected = null;
+
+            var actual = companyName;
+
+            Assert.AreEqual(expected, actual);
+
         }
     }
 }
