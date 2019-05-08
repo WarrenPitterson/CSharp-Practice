@@ -28,6 +28,7 @@ namespace Acme.Biz
         {
             Console.WriteLine("Product instance created");
             this.MinimumPrice = .96m;
+            this.Category = "Tools";
         }
         public Product(int productId,
                        string productName,
@@ -100,12 +101,16 @@ namespace Acme.Biz
             set { productvendor = value; }
         }
 
-        public string ValidationMessage { get; private set; }
+        internal string Category { get; set; }
+        public int SequenceNumber { get; set; } = 1;
+        public string ValidationMessage { get; private set;}
+
+        public string ProductCode => this.Category + "-" + this.SequenceNumber;
 
         public string SayHello()
         {
-            //var vendor = new Vendor();
-            //vendor.SendWelcomeEmail("This is the new email message");
+            var vendor = new Vendor();
+            vendor.SendWelcomeEmail("This is the new email message");
 
             var emailService = new EmailService();
             var confirmation = emailService.SendMessage("New product", this.ProductName, "sales@abc.com");
