@@ -94,5 +94,34 @@ namespace Acme.Biz.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod()]
+        public void ProductName_Format()
+        {
+            var currentProduct = new Product();
+            currentProduct.ProductName = "  Steel Hammer  ";
+
+            var expected = "Steel Hammer";
+
+            var actual = currentProduct.ProductName;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void ProductName_Length()
+        {
+            var currentProduct = new Product();
+            currentProduct.ProductName = "Saw";
+
+            string expected = "Saw";
+            string expectedMessage = null;
+
+            var actual = currentProduct.ProductName;
+            var actualMessage = currentProduct.ValidationMessage;
+
+            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expectedMessage, actualMessage);
+        }
     }
 }
