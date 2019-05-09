@@ -15,6 +15,10 @@ namespace Acme.Biz
     {
         public const double InchesPerMeter = 39.37;
         public readonly decimal MinimumPrice;
+        public decimal Cost { get; set; }
+
+        public decimal CalculatateSuggestedPrice(decimal markupPercentage) => this.Cost + (this.Cost * markupPercentage / 100);
+        
 
         private DateTime? availabilityDate;
 
@@ -117,7 +121,10 @@ namespace Acme.Biz
 
             var result = LoggingService.LogAction("Hello hello from logging");
 
-            return $"Hello {ProductName} ({ProductID}): {Description} Available on:";
+            return $"Hello {ProductName} ({ProductID}): {Description} Available on:{AvailabilityDate?.ToShortDateString()}";
         }
+
+        public override string ToString() => $"{this.ProductName} {this.productID} "; 
+        
     }
 }
