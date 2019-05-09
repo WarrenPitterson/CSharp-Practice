@@ -24,7 +24,7 @@ namespace Acme.Biz.Tests
 
             currentProduct.ProductVendor.CompanyName = "ABC Company";
 
-            var expected = "Hello Saw (1): 15 inch steel blade hand saw";
+            var expected = "Hello Saw (1): 15 inch steel blade hand saw Available on:";
 
             //Act
             var actual = currentProduct.SayHello();

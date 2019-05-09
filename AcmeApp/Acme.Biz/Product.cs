@@ -86,19 +86,19 @@ namespace Acme.Biz
             set { productID = value; }
         }
 
-        private Vendor productvendor;
+        private Vendor productVendor;
 
         public Vendor ProductVendor
         {
             get
             {
-                if (ProductVendor == null)
+                if (productVendor == null)
                 {
-                    productvendor = new Vendor();
+                    productVendor = new Vendor();
                 }
-                return productvendor;
+                return productVendor;
             }
-            set { productvendor = value; }
+            set { productVendor = value; }
         }
 
         internal string Category { get; set; }
@@ -109,15 +109,15 @@ namespace Acme.Biz
 
         public string SayHello()
         {
-            var vendor = new Vendor();
-            vendor.SendWelcomeEmail("This is the new email message");
+            //var vendor = new Vendor();
+            //vendor.SendWelcomeEmail("This is the new email message");
 
             var emailService = new EmailService();
             var confirmation = emailService.SendMessage("New product", this.ProductName, "sales@abc.com");
 
-            var resutlt = LoggingService.LogAction("Hello hello from logging");
+            var result = LoggingService.LogAction("Hello hello from logging");
 
-            return $"Hello {ProductName} ({ProductID}): {Description}";
+            return $"Hello {ProductName} ({ProductID}): {Description} Available on:";
         }
     }
 }
