@@ -62,7 +62,8 @@ namespace Acme.Biz.Tests
         {
             var vendor = new Vendor();
             var product = new Product(1, "Saw", "");
-            var expected = new OperationResult(true, "Order from Acme, Inc\r\nProduct:Tools-1\r\nQuantity:12");
+            var expected = new OperationResult(true, "Order from Acme, Inc\r\nProduct:Tools-1\r\nQuantity:12" +
+                                                "\r\nInstructions: Standard Delivery");
 
             var actual = vendor.PlaceOrder(product, 12);
 
@@ -79,19 +80,19 @@ namespace Acme.Biz.Tests
             var actual = vendor.PlaceOrder(null, 12);
         }
 
-        [TestMethod()]
-        public void PlaceOrderTest_WithAddress()
-        {
-            var vendor = new Vendor();
-            var product = new Product(1, "Saw", "");
-            var expected = new OperationResult(true, "Test with address");
+        //[TestMethod()]
+        //public void PlaceOrderTest_WithAddress()
+        //{
+        //    var vendor = new Vendor();
+        //    var product = new Product(1, "Saw", "");
+        //    var expected = new OperationResult(true, "Test with address");
 
-            var actual = vendor.PlaceOrder(product, 12,
-                                Vendor.IncludeAddress.Yes,
-                                Vendor.SendCopy.Yes);
+        //    var actual = vendor.PlaceOrder(product, 12,
+        //                        Vendor.IncludeAddress.Yes,
+        //                        Vendor.SendCopy.Yes);
 
-            Assert.AreEqual(expected.Success, actual.Success);
-            Assert.AreEqual(expected.Message, actual.Message);
-        }
+        //    Assert.AreEqual(expected.Success, actual.Success);
+        //    Assert.AreEqual(expected.Message, actual.Message);
+        //}
     }
 }

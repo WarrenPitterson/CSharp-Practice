@@ -13,30 +13,8 @@ namespace Acme.Biz
         public enum IncludeAddress { Yes, No };
         public enum SendCopy { Yes, No };
 
-        public OperationResult PlaceOrder(Product product, int quantity)
-        {
-            if (product == null)
-                throw new ArgumentNullException(nameof(product));
-            if (quantity <= 0)
-                throw new ArgumentOutOfRangeException(nameof(quantity));
-
-            var success = false;
-
-            var orderText = $"Order from Acme, Inc" + System.Environment.NewLine + "Product:" + product.ProductCode + System.Environment.NewLine + "Quantity:" + quantity;
-
-            var emailService = new EmailService();
-            var confirmation = emailService.SendMessage("New Order", orderText, this.Email);
-
-            if (confirmation.StartsWith("Message sent:"))
-            {
-                success = true;
-            }
-
-            var operationResult = new OperationResult(success, orderText);
-
-            return operationResult;
-        }
-        public OperationResult PlaceOrder(Product product, int quantity, DateTimeOffset? deliverBy, string instructions)
+        public OperationResult PlaceOrder(Product product, int quantity,
+                                          DateTimeOffset? deliverBy = null, string instructions = " Standard Delivery")
         {
             if (product == null)
                 throw new ArgumentNullException(nameof(product));
@@ -47,7 +25,7 @@ namespace Acme.Biz
 
             var success = false;
 
-            var orderText = $"order from Acme, Inc" + System.Environment.NewLine + "Product:" +
+            var orderText = $"Order from Acme, Inc" + System.Environment.NewLine + "Product:" +
                 product.ProductCode + System.Environment.NewLine + "Quantity:" + quantity;
 
             if (deliverBy.HasValue)
@@ -71,18 +49,6 @@ namespace Acme.Biz
 
             return operationResult;
         }
-        public OperationResult PlaceOrder(Product product, int quantity,
-                                          IncludeAddress includeAddress, SendCopy sendCopy)
-        {
-            var orderText = "Test";
-            if (includeAddress == IncludeAddress.Yes) orderText += " with address";
-            if (sendCopy == SendCopy.No) orderText += "With Copy";
-
-            var operationResult = new OperationResult(true, orderText);
-            return operationResult;
-        }
-
-
         public int VendorId { get; set; }
         public string CompanyName { get; set; }
         public string Email { get; set; }
