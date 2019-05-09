@@ -10,6 +10,9 @@ namespace Acme.Biz
     public class Vendor
     {
 
+        public enum IncludeAddress { Yes, No };
+        public enum SendCopy { Yes, No };
+
         public OperationResult PlaceOrder(Product product, int quantity)
         {
             if (product == null)
@@ -29,9 +32,9 @@ namespace Acme.Biz
                 success = true;
             }
 
-            var operationResutlt = new OperationResult(success, orderText);
+            var operationResult = new OperationResult(success, orderText);
 
-            return operationResutlt;
+            return operationResult;
         }
         public OperationResult PlaceOrder(Product product, int quantity, DateTimeOffset? deliverBy, string instructions)
         {
@@ -64,15 +67,25 @@ namespace Acme.Biz
                 success = true;
             }
 
-            var operationResutlt = new OperationResult(success, orderText);
+            var operationResult = new OperationResult(success, orderText);
 
-            return operationResutlt;
+            return operationResult;
         }
+        public OperationResult PlaceOrder(Product product, int quantity,
+                                          IncludeAddress includeAddress, SendCopy sendCopy)
+        {
+            var orderText = "Test";
+            if (includeAddress == IncludeAddress.Yes) orderText += " with address";
+            if (sendCopy == SendCopy.No) orderText += "With Copy";
+
+            var operationResult = new OperationResult(true, orderText);
+            return operationResult;
+        }
+
 
         public int VendorId { get; set; }
         public string CompanyName { get; set; }
         public string Email { get; set; }
-
         public string SendWelcomeEmail(string message)
         {
             var emailService = new EmailService();

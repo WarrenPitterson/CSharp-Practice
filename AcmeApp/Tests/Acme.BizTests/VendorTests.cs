@@ -78,5 +78,20 @@ namespace Acme.Biz.Tests
 
             var actual = vendor.PlaceOrder(null, 12);
         }
+
+        [TestMethod()]
+        public void PlaceOrderTest_WithAddress()
+        {
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true, "Test with address");
+
+            var actual = vendor.PlaceOrder(product, 12,
+                                Vendor.IncludeAddress.Yes,
+                                Vendor.SendCopy.Yes);
+
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
+        }
     }
 }
