@@ -49,21 +49,6 @@ namespace Acme.Biz
 
             return operationResult;
         }
-
-        public override string ToString()
-        {
-            string vendorInfo = $"Vendor: {this.CompanyName}";
-            string result;
-            result = vendorInfo.ToLower();
-            result = vendorInfo.ToUpper();
-            result = vendorInfo.Replace("Vendor", "Supplier");
-
-            var length = vendorInfo.Length;
-            var index = vendorInfo.IndexOf(":");
-            var begins = vendorInfo.StartsWith("Vendor");
-
-            return vendorInfo;
-        }
         public int VendorId { get; set; }
         public string CompanyName { get; set; }
         public string Email { get; set; }

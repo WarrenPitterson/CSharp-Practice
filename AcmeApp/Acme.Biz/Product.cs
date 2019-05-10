@@ -106,10 +106,10 @@ namespace Acme.Biz
         }
 
         internal string Category { get; set; }
-        public int SequenceNumber { get; set; } = 1;
+        public int SequenceNumber { get; set; } = 001;
         public string ValidationMessage { get; private set;}
+        public string ProductCode => $"{this.Category}-{this.SequenceNumber:00}";
 
-        public string ProductCode => this.Category + "-" + this.SequenceNumber;
 
         public string SayHello()
         {
@@ -124,7 +124,7 @@ namespace Acme.Biz
             return $"Hello {ProductName} ({ProductID}): {Description} Available on:{AvailabilityDate?.ToShortDateString()}";
         }
 
-        public override string ToString() => $"{this.ProductName} {this.productID} "; 
-        
-    }
+        public override string ToString() => $"{this.ProductName} {this.productID} ";
+
+   }
 }

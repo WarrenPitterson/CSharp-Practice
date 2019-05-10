@@ -18,7 +18,7 @@ namespace Acme.Biz.Tests
             var currentProduct = new Product
             {
                 ProductName = "Saw",
-                ProductID = 1,
+                ProductID = 001,
                 Description = "15 inch steel blade hand saw",
             };
 
@@ -165,7 +165,7 @@ namespace Acme.Biz.Tests
         {
             var currentProduct = new Product();
 
-            var expected = "Tools-1";
+            var expected = "Tools-01";
 
             var actual = currentProduct.ProductCode;
 
@@ -175,7 +175,7 @@ namespace Acme.Biz.Tests
         [TestMethod()]
         public void CalculatateSuggestedPriceTest()
         {
-            var currentProduct = new Product(1, "Saw", "");
+            var currentProduct = new Product(001, "Saw", "");
             currentProduct.Cost = 50m;
             var expected = 55m;
 
