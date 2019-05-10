@@ -80,19 +80,31 @@ namespace Acme.Biz.Tests
             var actual = vendor.PlaceOrder(null, 12);
         }
 
-        //[TestMethod()]
-        //public void PlaceOrderTest_WithAddress()
-        //{
-        //    var vendor = new Vendor();
-        //    var product = new Product(1, "Saw", "");
-        //    var expected = new OperationResult(true, "Test with address");
+        [TestMethod()]
+        public void PleaceOrder_NoDeliveryDate()
+        {
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true, "Order from Acme, Inc\r\nProduct:Tools-1\r\nQuantity:12" +
+                                                "\r\nInstructions: Deliver to Suite 42");
 
-        //    var actual = vendor.PlaceOrder(product, 12,
-        //                        Vendor.IncludeAddress.Yes,
-        //                        Vendor.SendCopy.Yes);
+            var actual = vendor.PlaceOrder(product, 12, instructions: " Deliver to Suite 42");
 
-        //    Assert.AreEqual(expected.Success, actual.Success);
-        //    Assert.AreEqual(expected.Message, actual.Message);
-        //}
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
+        }
+
+        [TestMethod()]
+        public void ToStringTest()
+        {
+            var vendor = new Vendor();
+            vendor.VendorId = 1;
+            vendor.CompanyName = "ABC Corp";
+            var expected = "Vendor: ABC Corp";
+
+            var actual = vendor.ToString();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
